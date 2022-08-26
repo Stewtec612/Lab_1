@@ -9,13 +9,13 @@ classes = []
 
 print('List of Classes')
 #set the amount of items that will load into a list
-n = int(input("Enter number of elements in the list : "))
+num_of_classes = int(input("How many classes are you taking?: "))
 
-#set the range so you will be asked as many times as you entered
-for i in range(0 , n):
-    str(print ('Class-{}:'.format(i+1)))
-    elm = str(input())
-    classes.append(elm)
+#set the range so you will be asked between 1 and the amount of classes entered
+for i in range(num_of_classes):
+    print (f'Class-{i+1}:')
+    class_name = str(input())
+    classes.append(class_name)
 
 #once you have completed the number of entries, print the finished list
 
