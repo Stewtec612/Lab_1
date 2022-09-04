@@ -9,6 +9,12 @@ from re import sub
 
 
 
+def banner():
+    """Display program name"""
+    message = 'Awesome camel case program!'
+    stars = '*' * len(message)
+    print(f'\n{stars} \n{message} \n{stars}\n')
+
 #function converts the user's input into a camelCase format
 def camilize(user_input):
 
@@ -17,6 +23,7 @@ def camilize(user_input):
     return ''.join([user_input[0].lower(), user_input[1:]])
 
 def main():
+    banner()
 
     print('Convert any sentence into camelCase')
     user_input = input('insert sentence you want to convert to camel case: ')
@@ -24,13 +31,4 @@ def main():
     camel_case = camilize(user_input)
 
     print(camel_case)
-    
 main()
-
-
-
-
-
-
-
-
