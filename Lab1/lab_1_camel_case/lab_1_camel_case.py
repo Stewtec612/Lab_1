@@ -9,25 +9,22 @@ from re import sub
 
 
 
-
-
 #function converts the user's input into a camelCase format
-def camilize(userInput):
+def camilize(user_input):
 
     
-    userInput = sub(r"(_|-)+"," ", userInput).title().replace(" ", "")
-    return ''.join([userInput[0].lower(), userInput[1:]])
+    user_input = sub(r"(_|-)+"," ", user_input).title().replace(" ", "")
+    return ''.join([user_input[0].lower(), user_input[1:]])
 
 def main():
 
     print('Convert any sentence into camelCase')
+    user_input = ('insert sentence you want to convert to camel case: ')
 
-    userInput = input('Enter a sentence: ')
-
-    camel_case = camilize(userInput)
+    camel_case = camilize(user_input)
 
     print(camel_case)
-
+    
 main()
 
 
