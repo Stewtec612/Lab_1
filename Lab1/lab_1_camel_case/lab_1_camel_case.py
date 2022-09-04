@@ -19,7 +19,7 @@ def camilize(user_input):
 def main():
 
     print('Convert any sentence into camelCase')
-    user_input = ('insert sentence you want to convert to camel case: ')
+    user_input = input('insert sentence you want to convert to camel case: ')
 
     camel_case = camilize(user_input)
 
