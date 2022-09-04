@@ -16,19 +16,18 @@ def banner():
     print(f'\n{stars} \n{message} \n{stars}\n')
 
 #function converts the user's input into a camelCase format
-def camilize(userInput):
+def camilize(user_input):
 
     
-    userInput = sub(r"(_|-)+"," ", userInput).title().replace(" ", "")
-    return ''.join([userInput[0].lower(), userInput[1:]])
+    user_input = sub(r"(_|-)+"," ", user_input).title().replace(" ", "")
+    return ''.join([user_input[0].lower(), user_input[1:]])
 
 def main():
     banner()
+
     print('Convert any sentence into camelCase')
 
-    userInput = input('Enter a sentence: ')
-
-    print(camilize(userInput))
+    user_input = input('Enter a sentence: ')    
 
 main()
 
