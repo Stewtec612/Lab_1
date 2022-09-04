@@ -24,7 +24,9 @@ def main():
 
     userInput = input('Enter a sentence: ')
 
-    print(camilize(userInput))
+    camel_case = camilize(userInput)
+
+    print(camel_case)
 
 main()
 
