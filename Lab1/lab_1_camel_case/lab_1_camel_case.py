@@ -26,8 +26,11 @@ def main():
     banner()
 
     print('Convert any sentence into camelCase')
+    user_input = input('insert sentence you want to convert to camel case: ')
 
-    user_input = input('Enter a sentence: ')    
+    camel_case = camilize(user_input)
+
+    print(camel_case)
 
 main()
 
